@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    min-height: 100vh;
+    background: url(img/background.png);
+    background-size: cover ;
+    font-family: "Raleway", sans-serif;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%) ;
+    margin-top: 100px;
+}
+.box{
+    min-height: 220px;
+    background-color: #fafafa;
+    border-radius: 38px;
+    text-align: center;
+    position: relative;
+
+}
+.box::before{
+    background: linear-gradient(135deg,rgba(255, 255, 255,0.1),rgba(255,255,255,0));
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255,0.18);
+    border-radius: 15px;
+    z-index: -1;
+}
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px 0;
+}
+.content{
+    padding: 0 40px ;
+}
+.input{
+    background: #fafafa ;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.input label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid navy ;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+}
+button#calculate{
+    color: #fff;
+    background-color: #904ff9;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: nones;
+}
+button#calculate:hover{
+    background: #5900ff;
+}
+.result{
+    padding: 30px 20px;
+}
+.result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+}
+.result #result{
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+
+#comment{
+    color: #4f7df9;
+    font-weight: 800;
+}
+@media only screen and (max-width:768px){
+    .container{
+        margin-top: 50px;
+    }
+    .input input{
+        width: 100%;
+    }
+}
